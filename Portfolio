@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Thomas' Webpage</title>
+<style type="text/css">
+  body
+  {
+      border:2px solid blue;
+      margin:0px;
+      background-color:lightgray;  
+  }
+  div#nav > ul
+  {
+    list-style-type:none;
+  }
+  div#nav > ul > li
+  {
+      float:left; 
+  }
+  div#nav > ul::after
+  {
+      content:" ";
+      display:block;
+      clear:left;
+  }
+  div#nav > ul > li > a
+  {
+      text-decoration:none;
+      background-color:darkblue;
+      color:white;
+      display:inline-block;
+      height:100px;
+      width:200px;
+      text-align:center;
+      line-height:100px;
+      font-family:tahoma;
+
+  }
+
+  div#nav > ul > li > a:hover
+  {
+    background-color:lightblue;
+    color:black;
+  }
+</style>
+</head>
+
+
+
+<body>
+  <h1>My Portfolio!</h1>
+
+<header>
+    <div id="nav">
+          <ul>
+            <li><a href="#">Homepage</a></li>
+            <li><a href="http://thfrietzsche.github.io/aboutme">About Me</a></li>
+            <li><a href="http://thfrietzsche.github.io/Portfolio">Portfolio</a></li>
+            <li><a href="http://thfrietzsche.github.io/Contactme">Contact Me</a></li>
+          </ul>
+
+
+    </div>
+  </header>
+
+<img src="downloads/bernie.jfif"> alt="Placeholder photo of bernie"
+
+
+
+
+
+
+
+
+
+</body>
