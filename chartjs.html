@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+<head> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.css"></script>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>My Data Chart</title>
+<canvas id="myChart" width="400" height="400"></canvas>
+</head>
+<body>
+    <div> class="container">
+        <canvas> id="myChart></canvas>
+
+    </div>
+
+    <script>
+        let myChart = document.getElementById('myChart').getContext('2d');
+        
+        let caliPopChart = new Chart(myChart, {
+            type:'bar', //
+            data:{
+                labels:['Los Angeles', 'San Diego','San Jose', 'Fresno','San Fransisco']
+                datasets:[{
+                    label:'Population'
+                    data:[
+                    3,966,936
+                    1,409,573
+                    1,027,690
+                    874,961
+                    525,010
+
+                    
+
+
+                    ]
+                }]
+            },
+            options:{}
+    </script>
+
+
+
+
+
+</body>
