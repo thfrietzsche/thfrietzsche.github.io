@@ -1,7 +1,103 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<body>
-<h1>Hello World</h1>
-<p>Swaggy Skateboard P.</p>
-</body>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+		<style>
+			.container {
+				display: flex;
+			}
+			.col {
+				flex: 1
+			}
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>How to use reveal.js
+					<p>By Thomas Frietzsche </p>
+				</section>
+
+				<section>What is reveal.js?
+					<p>reveal.js is a powerful tool to make good looking html presentations online with tons of different features. </section>
+				<section>How do I markdown in reveal.js?
+					<p> To markdown and write in reveal.js I have been taking advantage of the slide titles as well as the paragraph tag in html in the next slide we will look at how I am doing this. </section>
+				<section>Looking at the code
+				<div class="container">
+					<div class="col">
+						<pre><code class="hljs language-java"import java.jdbc.*;
+<p> <p>To markdown and write in reveal.js I use the paragraph tag</p></code>
+</code></pre>
+					
+
+				</section>
+				<section>You can add media to your slides
+					<p> to do so you would have to have your media saved on the same file so that you can pull from it.
+					</p>
+					<p>[See next slide for image]</p>
+					</section>
+				<section> <img data-src="appa.jpg"></section>
+				<section>Looking at the code
+				<div class="container">
+					<div class="col">
+						<pre><code class="hljs language-java"import java.jdbc.*;
+<section> <img data-src="appa.jpg"></section>
+</code></pre></section>
+				<section>What happened?
+					<p> Now if you look closely at slide 6 you can see I actually put the picture as the title to make it take up the full page but this was just one simple way to do it you can obviously include the code on the same page I just wanted to take a moment to appreciate Appa.</p>
+				</section>
+
+				<section>You can also change transition styles
+					<p> you can select different transitions such as:
+					</p><p>[Notice Clicking on one of these links will bring you to the first slide but with a different transition selected]</p>
+						<br>
+						<a href="?transition=cube#/transitions">Cube</a>
+						<a href="?transition=page#/transitions">Page</a>
+						<a href="?transition=concave#/transitions">Concave</a>
+						<a href="?transition=zoom#/transitions">Zoom</a>
+
+					</p>
+
+
+				</section>
+				<section>
+					Just scratching the surface
+					<p> The things I have shown you in this presentation is just scratching the surface of what you can do with reveal.js there is so much more that you can do, if you also want to get started with reveal.js you can start at https://revealjs.com
+				</section>
+				<section>
+					Fin
+				</section>
+
+
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				slideNumber: true,
+				center: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
 </html>
